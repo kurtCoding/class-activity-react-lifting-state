@@ -1,3 +1,11 @@
 export default function Attendees() {
-  return;
+  return (
+    <div className="attendees">
+    {attendees.map((attendee, index) => (
+      <>
+        
+      </>
+    ))}
+  </div>
+  );
 }
