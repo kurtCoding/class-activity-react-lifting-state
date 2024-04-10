@@ -1,11 +1,17 @@
 export default function Attendees() {
   return (
-    <div className="attendees">
-    {attendees.map((attendee, index) => (
-      <>
-        
-      </>
-    ))}
-  </div>
-  );
+    <>
+      <button onClick={toggleEventAttendees}>
+        {!showAttendees ? "Show Attendees" : "Hide Attendees"}
+      </button>
+
+      {showAttendees ? (
+        <div className="attendees">
+        {attendees.map((attendee, index) => (
+          <Attendee />
+        ))}
+      </div>
+      ) : null}
+    </>
+);
 }

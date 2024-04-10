@@ -1,3 +1,5 @@
+import Attendees from "./Attendees";
+
 export default function Event() {
   return (
     <div className="events">
@@ -15,15 +17,7 @@ export default function Event() {
               <br />
               <span>Organized by: {event.organizer} </span>
               <br />
-              <>
-                <button onClick={toggleEventAttendees}>
-                  {!showAttendees ? "Show Attendees" : "Hide Attendees"}
-                </button>
-
-                {showAttendees ? (
-                 
-                ) : null}
-              </>
+              <Attendees/>
             </li>
           </>
         );

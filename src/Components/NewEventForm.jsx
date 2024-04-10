@@ -1,4 +1,4 @@
-export default function NewEventForm({ handleAddEvent }) {
+export default function NewEventForm({ handleSubmit, handleTextChange, handleSelectChange, newEvent }) {
   return (
     <div className="new-event">
           <>
